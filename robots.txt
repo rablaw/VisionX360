@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rablaw.github.io/VisionX360/sitemap.xml
