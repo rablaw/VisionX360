@@ -4,16 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>VisionX360 | فعاليات واقع افتراضي للمدارس العربية</title>
-  <meta name="description" content="VisionX360 يقدم أفلام وفعاليات واقع افتراضي حصرية للمدارس العربية، المراكز والمناسبات. تجربة تعليمية وترفيهية غامرة بجودة عالية. تشعر كأنك هناك!" />
-  <meta name="keywords" content="VisionX360, VisionX VR, واقع افتراضي, مدارس عربية, فعاليات مدارس, VR مدارس, جولة في بلادنا, رحلة في بلادنا, النظام الشمسي, الفضاء, فعاليات تعليمية, מציאות מדומה לבתי ספר" />
+  <title>VisionX360 | فعاليات واقع افتراضي للمدارس العربية | أيام قمة وورشات تعليمية</title>
+
+  <meta name="description" content="VisionX360 يقدم فعاليات واقع افتراضي وأيام قمة وورشات تعليمية للمدارس العربية، تشمل أفلام VR حصرية، جولة في بلادنا، النظام الشمسي، الفضاء، وتجارب تعليمية تفاعلية للمراكز والمناسبات. تشعر كأنك هناك!" />
+
+  <meta name="keywords" content="VisionX360, VisionX VR, واقع افتراضي, فعاليات واقع افتراضي, فعاليات للمدارس العربية, فعاليات مدرسية, أيام قمة, يوم قمة, ورشات تعليمية, ورشة واقع افتراضي, نشاط مدرسي, نشاط تعليمي, برنامج تعليمي, رحلة تعليمية, رحلة افتراضية, جولة افتراضية, تعليم تفاعلي, تكنولوجيا تعليمية, أفلام واقع افتراضي, نظارات VR, نظارات واقع افتراضي, مدارس ابتدائية, مدارس إعدادية, مدارس ثانوية, مراكز جماهيرية, مراكز ثقافية, مناسبات, مخيمات صيفية, النظام الشمسي, المجموعة الشمسية, المنظومة الشمسية, الفضاء, الكواكب, علم الفلك, جولة في بلادنا, رحلة في بلادنا, تعرف على بلادنا, معالم البلاد, التراث, الجغرافيا, מציאות מדומה, בתי ספר ערביים, פעילות לבית ספר, יום שיא, סדנאות, מערכת השמש, חלל, VR Schools, Virtual Reality Education, Educational VR" />
+
   <meta name="robots" content="index, follow" />
+  <meta name="author" content="VisionX360" />
+  <link rel="canonical" href="https://rablaw.github.io/VisionX360/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VisionX360 | فعاليات واقع افتراضي للمدارس العربية" />
-  <meta property="og:description" content="حوّل يوم المدرسة إلى رحلة غامرة داخل الواقع الافتراضي. تشعر كأنك هناك!" />
+  <meta property="og:description" content="أيام قمة وورشات تعليمية بالواقع الافتراضي للمدارس العربية. أفلام VR حصرية: بلادنا، النظام الشمسي، الفضاء وتجارب 360. تشعر كأنك هناك!" />
   <meta property="og:image" content="visionx_logo_small.png" />
   <meta property="og:url" content="https://rablaw.github.io/VisionX360/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "VisionX360",
+    "alternateName": "VisionX VR",
+    "url": "https://rablaw.github.io/VisionX360/",
+    "logo": "https://rablaw.github.io/VisionX360/visionx_logo_small.png",
+    "description": "فعاليات واقع افتراضي، أيام قمة، ورشات تعليمية وأفلام VR حصرية للمدارس العربية والمراكز والمناسبات.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Israel"
+    },
+    "sameAs": [
+      "https://www.instagram.com/visionxvr3609/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+972506410322",
+      "contactType": "customer service",
+      "availableLanguage": ["Arabic", "Hebrew"]
+    }
+  }
+  </script>
 
   <style>
     :root {
@@ -81,12 +111,18 @@
       margin-bottom: 22px;
     }
 
-   .logo{
-    width: min(320px, 80vw);
-    height:auto;
-    display:block;
-    margin:0 auto;
-}
+    .logo {
+      width: min(320px, 80vw);
+      height: auto;
+      object-fit: contain;
+      background: transparent;
+      padding: 0;
+      margin: 0 auto;
+      display: block;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
     .hero-content {
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
@@ -96,8 +132,6 @@
 
     .badge {
       display: inline-flex;
-      align-items: center;
-      gap: 8px;
       padding: 8px 16px;
       border-radius: 999px;
       background: rgba(34,211,238,0.15);
@@ -151,7 +185,6 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
       padding: 15px 24px;
       border-radius: 16px;
       font-weight: 900;
@@ -212,16 +245,16 @@
       color: var(--muted);
       font-size: 1.1rem;
       margin: 0 auto;
-      max-width: 780px;
+      max-width: 820px;
     }
 
-    .cards {
+    .cards, .seo-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .card {
+    .card, .seo-card {
       background: rgba(255,255,255,0.1);
       border: 1px solid rgba(255,255,255,0.16);
       border-radius: 26px;
@@ -230,7 +263,7 @@
       transition: 0.25s;
     }
 
-    .card:hover {
+    .card:hover, .seo-card:hover {
       transform: translateY(-6px);
       background: rgba(255,255,255,0.14);
     }
@@ -246,13 +279,13 @@
       background: rgba(34,211,238,0.16);
     }
 
-    .card h3 {
+    h3 {
       font-size: 1.35rem;
       margin: 0 0 10px;
       color: white;
     }
 
-    .card p {
+    .card p, .seo-card p {
       color: #dbeafe;
       margin: 0;
     }
@@ -293,11 +326,9 @@
 
     .program h3 {
       font-size: 1.9rem;
-      margin: 0 0 10px;
     }
 
     .program p {
-      margin: 0;
       color: #e0f2fe;
     }
 
@@ -352,10 +383,7 @@
       object-fit: contain;
       display: block;
       border-radius: 20px;
-      transition: 0.35s;
     }
-
-    .gallery a:hover img { transform: scale(1.03); }
 
     .gallery span {
       position: absolute;
@@ -387,7 +415,7 @@
 
     .cta p {
       color: var(--muted);
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto 24px;
       font-size: 1.15rem;
     }
@@ -420,18 +448,13 @@
     }
 
     @media (max-width: 900px) {
-      .hero-content,
-      .programs,
-      .gallery {
+      .hero-content, .programs, .gallery {
         grid-template-columns: 1fr;
       }
 
-      .cards,
-      .steps {
+      .cards, .seo-grid, .steps {
         grid-template-columns: 1fr 1fr;
       }
-
-      .visual { min-height: auto; }
     }
 
     @media (max-width: 600px) {
@@ -440,17 +463,15 @@
         border-radius: 24px;
       }
 
-      .cards,
-      .steps {
+      .cards, .seo-grid, .steps {
         grid-template-columns: 1fr;
       }
 
       .logo {
-         width: min(260px, 80vw);
+        width: min(260px, 80vw);
       }
 
-      .program-image,
-      .gallery img {
+      .program-image, .gallery img {
         height: 230px;
       }
 
@@ -469,7 +490,7 @@
     <div class="hero-box">
 
       <div class="logo-wrap">
-        <img class="logo" src="visionx_logo_small.png" alt="VisionX360 Logo" />
+        <img class="logo" src="visionx_logo_small.png" alt="VisionX360 فعاليات واقع افتراضي للمدارس العربية" />
       </div>
 
       <div class="hero-content">
@@ -477,20 +498,21 @@
           <div class="badge">🎓 فعاليات VR للمدارس العربية</div>
 
           <h1>
-            رحلة مدرسية<br />
-            <span class="gradient">دون مغادرة المدرسة</span>
+            فعاليات واقع افتراضي<br />
+            <span class="gradient">للمدارس العربية</span>
           </h1>
 
           <div class="slogan">تشعر كأنك هناك!</div>
 
           <p class="lead">
-            في VisionX360 نحول الصف إلى تجربة غامرة بالواقع الافتراضي:
-            بلادنا، الفضاء، النظام الشمسي، ومغامرات تعليمية يشعر فيها الطالب كأنه داخل الحدث.
+            VisionX360 يقدم أيام قمة، ورشات تعليمية، نشاطات مدرسية، وأفلام واقع افتراضي حصرية
+            للمدارس العربية والمراكز والمناسبات. تجربة تعليمية تفاعلية تجمع بين المتعة،
+            التكنولوجيا، الإبهار البصري، والجودة العالية.
           </p>
 
           <div class="actions">
             <a class="btn btn-main" href="https://wa.me/972506410322?text=مرحبا%20VisionX360،%20أريد%20الاستفسار%20عن%20فعالية%20واقع%20افتراضي%20للمدرسة" target="_blank">
-              احجز فعالية الآن
+              احجز يوم قمة لمدرستكم
             </a>
 
             <a class="btn btn-soft" href="https://www.instagram.com/visionxvr3609/" target="_blank">
@@ -500,7 +522,7 @@
         </div>
 
         <div class="visual">
-          <img src="sample.png" alt="طلاب في فعالية واقع افتراضي VisionX360" />
+          <img src="sample.png" alt="طلاب في فعالية واقع افتراضي للمدارس العربية باستخدام نظارات VR من VisionX360" />
         </div>
       </div>
     </div>
@@ -518,19 +540,19 @@
       <div class="card">
         <div class="icon">🥽</div>
         <h3>تجربة غامرة 360°</h3>
-        <p>يشاهد الطلاب المحتوى داخل نظارات الواقع الافتراضي وكأنهم موجودون فعليًا في المكان.</p>
+        <p>يشاهد الطلاب أفلام واقع افتراضي داخل نظارات VR وكأنهم موجودون فعليًا في المكان.</p>
       </div>
 
       <div class="card">
         <div class="icon">🏫</div>
         <h3>نصل إلى المدرسة</h3>
-        <p>لا حاجة لسفر أو ترتيبات معقدة. نحن نحضر الأجهزة، التشغيل، والتنظيم الكامل.</p>
+        <p>نقدم فعاليات مدرسية داخل المدرسة نفسها، مع أجهزة جاهزة وتنظيم وتشغيل كامل.</p>
       </div>
 
       <div class="card">
         <div class="icon">🌟</div>
         <h3>محتوى جذاب</h3>
-        <p>أفلام واقع افتراضي حصرية تجمع بين المتعة، التعليم، والإبهار البصري.</p>
+        <p>أفلام واقع افتراضي حصرية تجمع بين التعليم التفاعلي، المتعة، والدهشة.</p>
       </div>
     </div>
   </section>
@@ -539,33 +561,33 @@
     <div class="section-title">
       <h2>برامجنا التعليمية</h2>
       <p>
-        أفلام واقع افتراضي حصرية مناسبة للفعاليات المدرسية، المراكز، والمناسبات.
+        أفلام واقع افتراضي حصرية مناسبة للفعاليات المدرسية، أيام القمة، المراكز، والمناسبات.
       </p>
     </div>
 
     <div class="programs">
       <div class="program">
         <div class="program-image">
-          <img src="sample.png" alt="تعرف على بلادنا بالواقع الافتراضي" />
+          <img src="sample.png" alt="تعرف على بلادنا جولة افتراضية ورحلة تعليمية في بلادنا للمدارس العربية" />
         </div>
         <div class="program-content">
           <h3>تعرف على بلادنا</h3>
           <p>
-            جولة افتراضية مذهلة في معالم بلادنا التاريخية والطبيعية،
-            تعزز المعرفة والانتماء بطريقة بصرية لا تُنسى.
+            جولة افتراضية ورحلة تعليمية في معالم بلادنا التاريخية والطبيعية.
+            برنامج مناسب للمدارس العربية، يدمج الجغرافيا، التراث، الطبيعة، والانتماء بطريقة بصرية لا تُنسى.
           </p>
         </div>
       </div>
 
       <div class="program">
         <div class="program-image">
-          <img src="solari.jpg" alt="النظام الشمسي والفضاء بالواقع الافتراضي" />
+          <img src="solari.jpg" alt="النظام الشمسي والفضاء والكواكب في فيلم واقع افتراضي تعليمي للمدارس" />
         </div>
         <div class="program-content">
           <h3>النظام الشمسي والفضاء</h3>
           <p>
-            رحلة بين الكواكب والنجوم، يتعرف خلالها الطلاب على أسرار الكون
-            بتجربة قريبة، ممتعة، ومؤثرة.
+            رحلة افتراضية بين الكواكب والنجوم، يتعرف خلالها الطلاب على النظام الشمسي،
+            المجموعة الشمسية، الفضاء، علم الفلك وأسرار الكون بتجربة ممتعة ومؤثرة.
           </p>
         </div>
       </div>
@@ -574,26 +596,62 @@
 
   <section>
     <div class="section-title">
+      <h2>فعاليات مدرسية، أيام قمة وورشات تعليمية</h2>
+      <p>
+        نقدم حلولًا مناسبة للمدارس الابتدائية، الإعدادية والثانوية، بالإضافة إلى المراكز الجماهيرية،
+        المراكز الثقافية، المخيمات الصيفية والمناسبات الخاصة.
+      </p>
+    </div>
+
+    <div class="seo-grid">
+      <div class="seo-card">
+        <h3>أيام قمة للمدارس</h3>
+        <p>
+          فعالية يوم قمة تكنولوجي وتعليمي داخل المدرسة، تجمع بين الواقع الافتراضي،
+          التعليم الحديث، التجربة التفاعلية، والمتعة.
+        </p>
+      </div>
+
+      <div class="seo-card">
+        <h3>ورشات واقع افتراضي</h3>
+        <p>
+          ورشات تعليمية باستخدام نظارات واقع افتراضي VR، مناسبة لأسبوع العلوم،
+          يوم التكنولوجيا، أسبوع الفضاء، وبرامج STEM و STEAM.
+        </p>
+      </div>
+
+      <div class="seo-card">
+        <h3>نشاطات للطلاب</h3>
+        <p>
+          نشاط مدرسي وتعليمي مختلف، مناسب لنهاية السنة، الفعاليات اللا منهجية،
+          الفعاليات الصيفية، والمناسبات المدرسية.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
       <h2>كيف تسير الفعالية؟</h2>
       <p>
-        نجهز اليوم بطريقة منظمة وسلسة حتى يستمتع أكبر عدد من الطلاب بدون ضغط على المدرسة.
+        نجهز اليوم بطريقة منظمة وسلسة حتى يستمتع أكبر عدد من الطلاب بتجربة واقع افتراضي آمنة ومريحة.
       </p>
     </div>
 
     <div class="steps">
       <div class="step">
         <h3>تنسيق الموعد</h3>
-        <p>نتفق مع المدرسة على اليوم، عدد الطلاب، والبرنامج المناسب.</p>
+        <p>نتفق مع المدرسة على اليوم، عدد الطلاب، والبرنامج التعليمي المناسب.</p>
       </div>
 
       <div class="step">
         <h3>تجهيز القاعة</h3>
-        <p>نحضر الأجهزة ونجهز المكان قبل بدء الفعالية.</p>
+        <p>نحضر نظارات VR، الأجهزة، المحتوى، ونجهز المكان قبل بدء الفعالية.</p>
       </div>
 
       <div class="step">
         <h3>تشغيل المجموعات</h3>
-        <p>ندخل الطلاب على مجموعات منظمة لتجربة مريحة وآمنة.</p>
+        <p>ندخل الطلاب على مجموعات منظمة لتجربة تعليمية وترفيهية مريحة.</p>
       </div>
 
       <div class="step">
@@ -605,18 +663,18 @@
 
   <section>
     <div class="section-title">
-      <h2>لقطات من فعالياتنا</h2>
-      <p>شاهدوا المزيد من الفيديوهات والصور عبر حسابنا الرسمي على إنستغرام.</p>
+      <h2>لقطات من فعاليات الواقع الافتراضي</h2>
+      <p>شاهدوا المزيد من فعاليات المدارس العربية، أفلام VR، وتجارب الطلاب عبر حسابنا الرسمي على إنستغرام.</p>
     </div>
 
     <div class="gallery">
       <a href="https://www.instagram.com/visionxvr3609/" target="_blank">
-        <img src="sample.png" alt="فعاليات واقع افتراضي للمدارس العربية" />
+        <img src="sample.png" alt="فعاليات واقع افتراضي للمدارس العربية VisionX360" />
         <span>فعاليات المدارس العربية</span>
       </a>
 
       <a href="https://www.instagram.com/visionxvr3609/" target="_blank">
-        <img src="solari.jpg" alt="فعالية النظام الشمسي والفضاء بالواقع الافتراضي" />
+        <img src="solari.jpg" alt="فعالية النظام الشمسي والفضاء للمدارس باستخدام الواقع الافتراضي" />
         <span>رحلة الفضاء والنظام الشمسي</span>
       </a>
     </div>
@@ -627,7 +685,7 @@
       <h2>جاهزون ليوم قمة مميز في مدرستكم؟</h2>
       <p>
         احجزوا فعالية VisionX360 واجعلوا الطلاب يعيشون تجربة واقع افتراضي تعليمية،
-        ممتعة، ومختلفة عن كل نشاط عادي.
+        ممتعة، حصرية ومختلفة عن كل نشاط عادي. تشعر كأنك هناك!
       </p>
 
       <a class="btn btn-main" href="https://wa.me/972506410322?text=مرحبا%20VisionX360،%20نريد%20حجز%20فعالية%20واقع%20افتراضي%20للمدرسة" target="_blank">
@@ -639,7 +697,8 @@
   <footer>
     <strong>VisionX360</strong>
     تشعر كأنك هناك!<br />
-    فعاليات واقع افتراضي للمدارس العربية، المراكز والمناسبات.
+    فعاليات واقع افتراضي، أيام قمة وورشات تعليمية للمدارس العربية، المراكز والمناسبات.<br />
+    Instagram: @visionxvr3609 | WhatsApp: 050-641-0322
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/972506410322?text=مرحبا%20VisionX360،%20أريد%20تفاصيل%20عن%20فعاليات%20الواقع%20الافتراضي" target="_blank">
