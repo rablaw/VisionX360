@@ -5,28 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>VisionX360 | فعاليات واقع افتراضي للمدارس العربية</title>
-  <meta name="description" content="VisionX360 يقدم فعاليات واقع افتراضي تعليمية وترفيهية للمدارس العربية، المراكز والمناسبات. جولات 360، بلادنا، الفضاء والنظام الشمسي بتجربة غامرة وممتعة." />
+  <meta name="description" content="VisionX360 يقدم أفلام وفعاليات واقع افتراضي حصرية للمدارس العربية، المراكز والمناسبات. تجربة تعليمية وترفيهية غامرة بجودة عالية. تشعر كأنك هناك!" />
   <meta name="keywords" content="VisionX360, VisionX VR, واقع افتراضي, مدارس عربية, فعاليات مدارس, VR مدارس, جولة في بلادنا, رحلة في بلادنا, النظام الشمسي, الفضاء, فعاليات تعليمية, מציאות מדומה לבתי ספר" />
   <meta name="robots" content="index, follow" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VisionX360 | فعاليات واقع افتراضي للمدارس العربية" />
-  <meta property="og:description" content="حوّل يوم المدرسة إلى رحلة غامرة داخل الواقع الافتراضي. برامج تعليمية وترفيهية للطلاب باللغة العربية." />
-  <meta property="og:image" content="visionx org logo.png" />
+  <meta property="og:description" content="حوّل يوم المدرسة إلى رحلة غامرة داخل الواقع الافتراضي. تشعر كأنك هناك!" />
+  <meta property="og:image" content="visionx_logo_small.png" />
   <meta property="og:url" content="https://rablaw.github.io/VisionX360/" />
 
   <style>
     :root {
       --bg: #07111f;
       --bg2: #0f2340;
-      --card: rgba(255,255,255,0.1);
-      --white: #ffffff;
       --muted: #dbeafe;
       --cyan: #22d3ee;
       --blue: #38bdf8;
       --yellow: #facc15;
       --green: #34d399;
-      --pink: #fb7185;
       --text: #f8fafc;
       --shadow: 0 25px 80px rgba(0,0,0,0.28);
     }
@@ -51,7 +48,7 @@
       min-height: 92vh;
       display: grid;
       place-items: center;
-      padding: 40px 18px;
+      padding: 35px 18px;
       position: relative;
     }
 
@@ -72,26 +69,36 @@
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.18);
       border-radius: 34px;
-      padding: 34px;
+      padding: 28px;
       box-shadow: var(--shadow);
       backdrop-filter: blur(18px);
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 30px;
-      align-items: center;
       position: relative;
       z-index: 1;
     }
 
+    .logo-wrap {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
     .logo {
-      width: 120px;
-      height: 120px;
+      width: 135px;
+      max-width: 34vw;
+      height: auto;
       object-fit: contain;
-      background: white;
-      padding: 12px;
-      border-radius: 28px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.28);
-      margin-bottom: 20px;
+      background: transparent;
+      padding: 0;
+      margin: 0 auto;
+      display: block;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
     }
 
     .badge {
@@ -108,9 +115,9 @@
     }
 
     h1 {
-      font-size: clamp(2.4rem, 6vw, 5.3rem);
-      line-height: 1.05;
-      margin: 0 0 18px;
+      font-size: clamp(2.2rem, 5.8vw, 5rem);
+      line-height: 1.1;
+      margin: 0 0 16px;
       letter-spacing: -1px;
     }
 
@@ -121,18 +128,30 @@
       color: transparent;
     }
 
+    .slogan {
+      display: inline-block;
+      margin: 4px 0 20px;
+      padding: 9px 22px;
+      font-size: 1.28rem;
+      font-weight: 900;
+      color: #03131f;
+      background: linear-gradient(90deg, var(--yellow), var(--cyan), var(--green));
+      border-radius: 999px;
+      box-shadow: 0 12px 34px rgba(0,0,0,0.25);
+    }
+
     .lead {
-      font-size: clamp(1.1rem, 2.2vw, 1.55rem);
+      font-size: clamp(1.08rem, 2vw, 1.45rem);
       color: var(--muted);
       max-width: 680px;
-      margin: 0 0 26px;
+      margin: 0;
     }
 
     .actions {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
-      margin-top: 24px;
+      margin-top: 26px;
     }
 
     .btn {
@@ -163,30 +182,21 @@
     .visual {
       min-height: 430px;
       border-radius: 30px;
-      background:
-        linear-gradient(rgba(7,17,31,0.1), rgba(7,17,31,0.55)),
-        url("sample.png") center/cover;
-      position: relative;
-      overflow: hidden;
+      background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.2);
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 12px;
     }
 
-    .floating-card {
-      position: absolute;
-      right: 22px;
-      bottom: 22px;
-      left: 22px;
-      background: rgba(255,255,255,0.9);
-      color: #0f172a;
-      border-radius: 24px;
-      padding: 20px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-    }
-
-    .floating-card strong {
+    .visual img {
+      width: 100%;
+      height: 100%;
+      max-height: 410px;
+      object-fit: contain;
       display: block;
-      font-size: 1.25rem;
-      margin-bottom: 4px;
+      border-radius: 22px;
     }
 
     section {
@@ -209,7 +219,7 @@
       color: var(--muted);
       font-size: 1.1rem;
       margin: 0 auto;
-      max-width: 760px;
+      max-width: 780px;
     }
 
     .cards {
@@ -261,33 +271,35 @@
     }
 
     .program {
-      min-height: 330px;
       border-radius: 30px;
       overflow: hidden;
-      position: relative;
-      padding: 28px;
-      display: flex;
-      align-items: end;
-      background-size: cover;
-      background-position: center;
-      box-shadow: var(--shadow);
+      background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: var(--shadow);
     }
 
-    .program::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.84), rgba(0,0,0,0.12));
+    .program-image {
+      height: 310px;
+      display: grid;
+      place-items: center;
+      background: #091827;
+      padding: 12px;
+    }
+
+    .program-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      border-radius: 20px;
     }
 
     .program-content {
-      position: relative;
-      z-index: 1;
+      padding: 26px;
     }
 
     .program h3 {
-      font-size: 2rem;
+      font-size: 1.9rem;
       margin: 0 0 10px;
     }
 
@@ -295,9 +307,6 @@
       margin: 0;
       color: #e0f2fe;
     }
-
-    .country { background-image: url("sample.png"); }
-    .space { background-image: url("solari.jpg"); }
 
     .steps {
       display: grid;
@@ -311,7 +320,6 @@
       border-radius: 22px;
       padding: 22px;
       border: 1px solid rgba(255,255,255,0.16);
-      position: relative;
     }
 
     .step::before {
@@ -339,25 +347,27 @@
       overflow: hidden;
       border-radius: 28px;
       border: 1px solid rgba(255,255,255,0.18);
-      background: rgba(255,255,255,0.08);
+      background: #091827;
       box-shadow: var(--shadow);
       position: relative;
+      padding: 12px;
     }
 
     .gallery img {
       width: 100%;
       height: 310px;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
+      border-radius: 20px;
       transition: 0.35s;
     }
 
-    .gallery a:hover img { transform: scale(1.06); }
+    .gallery a:hover img { transform: scale(1.03); }
 
     .gallery span {
       position: absolute;
-      inset-inline: 18px;
-      bottom: 18px;
+      inset-inline: 22px;
+      bottom: 22px;
       background: rgba(255,255,255,0.92);
       color: #0f172a;
       padding: 12px 16px;
@@ -396,6 +406,13 @@
       border-top: 1px solid rgba(255,255,255,0.12);
     }
 
+    footer strong {
+      color: white;
+      display: block;
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+
     .whatsapp-float {
       position: fixed;
       left: 18px;
@@ -410,7 +427,7 @@
     }
 
     @media (max-width: 900px) {
-      .hero-box,
+      .hero-content,
       .programs,
       .gallery {
         grid-template-columns: 1fr;
@@ -421,23 +438,29 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      .visual { min-height: 360px; }
+      .visual { min-height: auto; }
     }
 
     @media (max-width: 600px) {
-      .hero-box { padding: 22px; border-radius: 24px; }
+      .hero-box {
+        padding: 20px;
+        border-radius: 24px;
+      }
+
       .cards,
       .steps {
         grid-template-columns: 1fr;
       }
 
       .logo {
-        width: 95px;
-        height: 95px;
+        width: 110px;
       }
 
-      .visual { min-height: 300px; }
-      .gallery img { height: 230px; }
+      .program-image,
+      .gallery img {
+        height: 230px;
+      }
+
       .whatsapp-float {
         right: 14px;
         left: 14px;
@@ -451,32 +474,40 @@
 
   <main class="hero">
     <div class="hero-box">
-      <div>
-        <img class="logo" src="visionx org logo.png" alt="VisionX360 Logo" />
-        <div class="badge">🎓 فعاليات VR للمدارس العربية</div>
-        <h1>
-          رحلة مدرسية<br />
-          <span class="gradient">دون مغادرة المدرسة</span>
-        </h1>
-        <p class="lead">
-          في VisionX360 نحول الصف إلى تجربة غامرة بالواقع الافتراضي:
-          بلادنا، الفضاء، النظام الشمسي، ومغامرات تعليمية يشعر فيها الطالب كأنه داخل الحدث.
-        </p>
 
-        <div class="actions">
-          <a class="btn btn-main" href="https://wa.me/972506410322?text=مرحبا%20VisionX360،%20أريد%20الاستفسار%20عن%20فعالية%20واقع%20افتراضي%20للمدرسة" target="_blank">
-            احجز فعالية الآن
-          </a>
-          <a class="btn btn-soft" href="https://www.instagram.com/visionxvr3609/" target="_blank">
-            شاهد أعمالنا
-          </a>
-        </div>
+      <div class="logo-wrap">
+        <img class="logo" src="visionx_logo_small.png" alt="VisionX360 Logo" />
       </div>
 
-      <div class="visual">
-        <div class="floating-card">
-          <strong>تجربة تعليمية مبهرة للطلاب</strong>
-          واقع افتراضي، تنظيم كامل، أجهزة جاهزة، ومحتوى عربي مناسب للمدارس.
+      <div class="hero-content">
+        <div>
+          <div class="badge">🎓 فعاليات VR للمدارس العربية</div>
+
+          <h1>
+            رحلة مدرسية<br />
+            <span class="gradient">دون مغادرة المدرسة</span>
+          </h1>
+
+          <div class="slogan">تشعر كأنك هناك!</div>
+
+          <p class="lead">
+            في VisionX360 نحول الصف إلى تجربة غامرة بالواقع الافتراضي:
+            بلادنا، الفضاء، النظام الشمسي، ومغامرات تعليمية يشعر فيها الطالب كأنه داخل الحدث.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-main" href="https://wa.me/972506410322?text=مرحبا%20VisionX360،%20أريد%20الاستفسار%20عن%20فعالية%20واقع%20افتراضي%20للمدرسة" target="_blank">
+              احجز فعالية الآن
+            </a>
+
+            <a class="btn btn-soft" href="https://www.instagram.com/visionxvr3609/" target="_blank">
+              شاهد أعمالنا
+            </a>
+          </div>
+        </div>
+
+        <div class="visual">
+          <img src="sample.png" alt="طلاب في فعالية واقع افتراضي VisionX360" />
         </div>
       </div>
     </div>
@@ -486,7 +517,7 @@
     <div class="section-title">
       <h2>لماذا تختار المدارس VisionX360؟</h2>
       <p>
-        فعالية سهلة للمدرسة، ممتعة للطلاب، ومصممة لتجمع بين التعليم، التكنولوجيا، والدهشة.
+        فعالية سهلة للمدرسة، ممتعة للطلاب، بجودة عالية، ومصممة لتجمع بين التعليم، التكنولوجيا، والدهشة.
       </p>
     </div>
 
@@ -505,8 +536,8 @@
 
       <div class="card">
         <div class="icon">🌟</div>
-        <h3>محتوى عربي جذاب</h3>
-        <p>برامج مناسبة للطلاب العرب، تجمع بين المعرفة، المتعة، والانبهار البصري.</p>
+        <h3>محتوى جذاب</h3>
+        <p>أفلام واقع افتراضي حصرية تجمع بين المتعة، التعليم، والإبهار البصري.</p>
       </div>
     </div>
   </section>
@@ -514,11 +545,16 @@
   <section>
     <div class="section-title">
       <h2>برامجنا التعليمية</h2>
-      <p>برامج واقع افتراضي مناسبة لأيام القمة، الفعاليات المدرسية، المراكز، والمناسبات.</p>
+      <p>
+        أفلام واقع افتراضي حصرية مناسبة للفعاليات المدرسية، المراكز، والمناسبات.
+      </p>
     </div>
 
     <div class="programs">
-      <div class="program country">
+      <div class="program">
+        <div class="program-image">
+          <img src="sample.png" alt="تعرف على بلادنا بالواقع الافتراضي" />
+        </div>
         <div class="program-content">
           <h3>تعرف على بلادنا</h3>
           <p>
@@ -528,7 +564,10 @@
         </div>
       </div>
 
-      <div class="program space">
+      <div class="program">
+        <div class="program-image">
+          <img src="solari.jpg" alt="النظام الشمسي والفضاء بالواقع الافتراضي" />
+        </div>
         <div class="program-content">
           <h3>النظام الشمسي والفضاء</h3>
           <p>
@@ -543,7 +582,9 @@
   <section>
     <div class="section-title">
       <h2>كيف تسير الفعالية؟</h2>
-      <p>نجهز اليوم بطريقة منظمة وسلسة حتى يستمتع أكبر عدد من الطلاب بدون ضغط على المدرسة.</p>
+      <p>
+        نجهز اليوم بطريقة منظمة وسلسة حتى يستمتع أكبر عدد من الطلاب بدون ضغط على المدرسة.
+      </p>
     </div>
 
     <div class="steps">
@@ -551,14 +592,17 @@
         <h3>تنسيق الموعد</h3>
         <p>نتفق مع المدرسة على اليوم، عدد الطلاب، والبرنامج المناسب.</p>
       </div>
+
       <div class="step">
         <h3>تجهيز القاعة</h3>
         <p>نحضر الأجهزة ونجهز المكان قبل بدء الفعالية.</p>
       </div>
+
       <div class="step">
         <h3>تشغيل المجموعات</h3>
         <p>ندخل الطلاب على مجموعات منظمة لتجربة مريحة وآمنة.</p>
       </div>
+
       <div class="step">
         <h3>تجربة لا تُنسى</h3>
         <p>يخرج الطلاب من الفعالية بانطباع قوي وتجربة تعليمية مختلفة.</p>
@@ -600,7 +644,9 @@
   </section>
 
   <footer>
-    © 2026 VisionX360 — فعاليات واقع افتراضي للمدارس العربية، المراكز والمناسبات.
+    <strong>VisionX360</strong>
+    تشعر كأنك هناك!<br />
+    فعاليات واقع افتراضي للمدارس العربية، المراكز والمناسبات.
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/972506410322?text=مرحبا%20VisionX360،%20أريد%20تفاصيل%20عن%20فعاليات%20الواقع%20الافتراضي" target="_blank">
