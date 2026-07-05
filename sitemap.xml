@@ -5,6 +5,8 @@
     <loc>https://rablaw.github.io/VisionX360/</loc>
   </url>
 
+  <!-- Arabic Pages -->
+
   <url>
     <loc>https://rablaw.github.io/VisionX360/vr-schools.html</loc>
   </url>
@@ -47,6 +49,28 @@
 
   <url>
     <loc>https://rablaw.github.io/VisionX360/vr-workshops-schools.html</loc>
+  </url>
+
+  <!-- Hebrew Pages -->
+
+  <url>
+    <loc>https://rablaw.github.io/VisionX360/school-activities-he.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rablaw.github.io/VisionX360/vr-schools-he.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rablaw.github.io/VisionX360/school-peak-day-he.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rablaw.github.io/VisionX360/stem-he.html</loc>
+  </url>
+
+  <url>
+    <loc>https://rablaw.github.io/VisionX360/educational-activities-he.html</loc>
   </url>
 
 </urlset>
