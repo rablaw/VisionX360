@@ -43,14 +43,38 @@
     }
 
     header {
-      padding: 22px 0;
+      padding: 18px 0;
       background: #070b1c;
       border-bottom: 1px solid rgba(255,255,255,0.12);
     }
 
-    .brand {
-      font-size: 26px;
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .logo {
+      height: 54px;
+      width: auto;
+      display: block;
+    }
+
+    .top-nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .top-nav a {
+      color: #ffffff;
+      font-size: 17px;
       font-weight: bold;
+    }
+
+    .top-nav a:hover {
       color: #f5c542;
     }
 
@@ -131,63 +155,35 @@
       color: #bfc5dc;
       border-top: 1px solid rgba(255,255,255,0.12);
     }
-  </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "رحلات مدرسية بالواقع الافتراضي",
-    "provider": {
-      "@type": "Organization",
-      "name": "VisionX360",
-      "url": "https://visionx360.com/"
-    },
-    "serviceType": "Virtual Reality School Field Trips",
-    "areaServed": "Israel",
-    "description": "رحلات مدرسية تعليمية بالواقع الافتراضي داخل المدارس، تتيح للطلاب خوض تجربة غامرة دون الحاجة إلى مغادرة المدرسة."
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "هل تحتاج المدرسة إلى معدات خاصة؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "لا، VisionX360 تحضر معدات الواقع الافتراضي وتقوم بتجهيز التجربة داخل المدرسة."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل النشاط مناسب لعدد كبير من الطلاب؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، يمكن تنظيم الطلاب على مجموعات خلال اليوم الدراسي حسب عدد الصفوف والطلاب."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل التجربة تعليمية أم ترفيهية فقط؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "التجربة تعليمية بالأساس، لكنها تقدم بطريقة ممتعة وحديثة تجعل الطلاب أكثر تفاعلًا مع الموضوع."
-        }
+    @media (max-width: 700px) {
+      header .container {
+        flex-direction: column;
       }
-    ]
-  }
-  </script>
+
+      .top-nav {
+        justify-content: center;
+      }
+
+      .logo {
+        height: 48px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
     <div class="container">
-      <div class="brand">VisionX360</div>
+      <a href="https://rablaw.github.io/VisionX360/" aria-label="VisionX360 الصفحة الرئيسية">
+        <img src="assets/logo.png" alt="VisionX360" class="logo">
+      </a>
+
+      <nav class="top-nav">
+        <a href="https://rablaw.github.io/VisionX360/">الرئيسية</a>
+        <a href="https://rablaw.github.io/VisionX360/#contact">تواصل معنا</a>
+      </nav>
     </div>
   </header>
 
@@ -197,7 +193,7 @@
       <p>
         تجربة تعليمية غامرة داخل المدرسة، تنقل الطلاب إلى أماكن ومشاهد تعليمية بطريقة حديثة ومؤثرة، دون الحاجة إلى مغادرة الصف أو تنظيم رحلة خارجية.
       </p>
-      <a class="cta" href="/">تواصل معنا</a>
+      <a class="cta" href="https://rablaw.github.io/VisionX360/#contact">تواصل معنا</a>
     </div>
   </div>
 
@@ -230,7 +226,7 @@
     <section>
       <h2>تجربة داخل المدرسة بدون مواصلات</h2>
       <p>
-        تقوم VisionX360 بإحضار معدات الواقع الافتراضي إلى المدرسة، وتنظيم النشاط داخل الصف أو القاعة أو المكان المناسب. لا تحتاج المدرسة إلى نقل الطلاب أو الخروج خارج परिसर المدرسة.
+        تقوم VisionX360 بإحضار معدات الواقع الافتراضي إلى المدرسة، وتنظيم النشاط داخل الصف أو القاعة أو المكان المناسب. لا تحتاج المدرسة إلى نقل الطلاب أو الخروج خارج المدرسة.
       </p>
       <p>
         يتم تقسيم الطلاب إلى مجموعات منظمة، بحيث يحصل كل طالب على تجربة مشاهدة واضحة ومريحة ضمن برنامج اليوم الدراسي.
@@ -295,7 +291,7 @@
         و
         <a href="school-activities.html">فعاليات مدرسية تعليمية</a>.
       </p>
-      <a class="cta" href="/">حجز تجربة أو الاستفسار</a>
+      <a class="cta" href="https://rablaw.github.io/VisionX360/#contact">حجز تجربة أو الاستفسار</a>
     </section>
 
   </main>
